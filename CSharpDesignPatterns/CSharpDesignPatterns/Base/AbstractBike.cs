@@ -24,9 +24,24 @@ namespace CSharpDesignPatterns.Base
             ColorType = color; 
         } // end method virtual void
 
+        public virtual void CleanFrame()
+        {
+            Console.WriteLine("Cleaning Frame...");
+        } // end method virtual void clean frame
+
+        public virtual void AirTires()
+        {
+            Console.WriteLine("Airing up tires...");
+        } // end method virtual void air tires
+
+        public virtual void TestRide()
+        {
+            Console.WriteLine("Taking the bike for a test ride...");
+        } // end method virtual void test ride
+
         public override string ToString()
         {
-            return this.GetType().Name + " Bicycle Color is " + ColorType + "and costs $"
+            return this.GetType().Name + " Bicycle Color is " + ColorType + " and costs $"
                 + Price;
         } // end method override
 
